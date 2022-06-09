@@ -17,9 +17,9 @@ st.pydeck_chart(
             pdk.Deck(
                 map_style="mapbox://styles/mapbox/light-v9",
                 initial_view_state={
-                    "latitude": -33.76,
-                    "longitude": -70.4,
-                    "zoom": 11,
+                    "latitude": -33.5,
+                    "longitude": -70.7,
+                    "zoom": 8,
                     "pitch": 50,
                 },
                 layers=selected_layers,
