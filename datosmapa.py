@@ -1,7 +1,7 @@
 import pydeck as pdk
 import pandas as pd
 
-capas = {'TODAS': pdk.Deck(
+capas = {'TODAS': pdk.Layer(
             "ScatterplotLayer",
             data=pd.read_csv("FeriasLibresSantiago.csv"),
             get_position=["Longitud", "Latitud"],
