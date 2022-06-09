@@ -12,7 +12,7 @@ st.set_page_config(
 st.title("Ferias Libres de Chile")
 
 fdf = pd.read_csv('FeriasLibresSantiago.csv')
-m = folium.Map(location=[-33.5, -70.2], zoom_start=8)
+m = folium.Map(location=[-33.5, -70.7], zoom_start=12)
 for _, row in fdf.iterrows():
     folium.Marker(
         [row['Latitud'],row['Longitud']], 
