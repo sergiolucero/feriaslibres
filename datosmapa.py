@@ -6,7 +6,7 @@ capas = {'TODAS': pdk.Layer(
             data=pd.read_csv("FeriasLibresSantiago.csv"),
             get_position=["Latitud", "Longitud"],
             get_color=[200, 30, 0, 160],
-            get_radius="[exits]",
+            get_radius=5,
             radius_scale=0.05,
         ),
         }
