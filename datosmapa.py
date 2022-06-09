@@ -1,8 +1,9 @@
 import pydeck as pdk
+import pandas as pd
 
 capas = {'TODAS': pdk.Deck(
             "ScatterplotLayer",
-            data=from_data_file("FeriasLibresSantiago.csv"),
+            data=pd.read_csv("FeriasLibresSantiago.csv"),
             get_position=["Longitud", "Latitud"],
             get_color=[200, 30, 0, 160],
             get_radius="[exits]",
