@@ -10,7 +10,7 @@ st.set_page_config(page_title="🍉Ferias Libres de Chile🍏", page_icon="🍅"
 st.title("Ferias Libres de Chile")
 DIAS = 'Lu Ma Mi Ju Vi Sá Do'.split()
 fdf = pd.read_csv('FeriasLibresSantiago.csv')    # TODO: fix weird Horarios
-df = {dia: fdf[fdf.Horario.str.contains(dia)] for dia in DIAS}
+df = {dia: fdf[fdf.Horarios.str.contains(dia)] for dia in DIAS}
 
 m = folium.Map(location=[-33.5, -70.7], zoom_start=12)
 for _, row in fdf.iterrows():
