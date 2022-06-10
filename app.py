@@ -20,7 +20,7 @@ for _, row in fdf.iterrows():
     ).add_to(m)
 
 # call to render Folium map in Streamlit
-st_data = st_folium(m, width = 725)
+st_data = st_folium(m, width = 1200, height=800)
 
 #selected_layers = [capas['TODAS']]
 
