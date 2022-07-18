@@ -36,4 +36,5 @@ st_data = st_folium(m, width = 1200, height=800)
 #                layers=selected_layers,
 #            )
 #        )
-st.dataframe(fdf)
+#st.dataframe(fdf)
+st.write('Hola Vecino')
